@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64FB79B209B6867008EE9F5 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = B64FB79A209B6867008EE9F5 /* UIViewController+Alert.m */; };
 		B66ABBAC209B622700CBBA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBAB209B622700CBBA0E /* AppDelegate.m */; };
 		B66ABBAF209B622700CBBA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBAE209B622700CBBA0E /* ViewController.m */; };
 		B66ABBB2209B622700CBBA0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66ABBB0209B622700CBBA0E /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B64FB799209B6867008EE9F5 /* UIViewController+Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
+		B64FB79A209B6867008EE9F5 /* UIViewController+Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
 		B66ABBA7209B622700CBBA0E /* ios-objc-utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-objc-utils.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66ABBAA209B622700CBBA0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B66ABBAB209B622700CBBA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,6 +132,7 @@
 		B66ABBDC209B62B100CBBA0E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B66ABBDF209B642400CBBA0E /* UIKit */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -154,6 +158,15 @@
 				B66ABBB5209B622B00CBBA0E /* LaunchScreen.storyboard */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B66ABBDF209B642400CBBA0E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B64FB799209B6867008EE9F5 /* UIViewController+Alert.h */,
+				B64FB79A209B6867008EE9F5 /* UIViewController+Alert.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +302,7 @@
 				B66ABBAF209B622700CBBA0E /* ViewController.m in Sources */,
 				B66ABBBA209B622B00CBBA0E /* main.m in Sources */,
 				B66ABBAC209B622700CBBA0E /* AppDelegate.m in Sources */,
+				B64FB79B209B6867008EE9F5 /* UIViewController+Alert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
