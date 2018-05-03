@@ -21,6 +21,16 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+#pragma mark UIView+Gradation Usage
+
+    UIColor * const whiteColor = UIColor.whiteColor;
+    UIColor * const magentaColor = UIColor.magentaColor;
+    [self.view gradationWithTopColor:whiteColor bottomColor:magentaColor];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
@@ -30,11 +40,11 @@
 
 #pragma mark - IBActions
 
-#pragma mark UIViewController+Storyboard.h Usage
-
 - (IBAction)didTapToNextViewController:(UIButton *)sender {
 
     DLOG();
+
+#pragma mark UIViewController+Storyboard Usage
 
     // Storyboard名を指定して、NextViewControllerのインスタンスを生成
     NSString * const storyboardName = @"NextViewController";

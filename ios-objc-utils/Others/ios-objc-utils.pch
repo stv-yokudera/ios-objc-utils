@@ -10,6 +10,8 @@
 #define ios_objc_utils_pch
 
 #pragma mark - Categories
+
+#import "UIView+Gradation.h"
 #import "UIViewController+Alert.h"
 #import "UIViewController+Storyboard.h"
 

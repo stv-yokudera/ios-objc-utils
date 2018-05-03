@@ -11,6 +11,7 @@
 		B64FB79F209B7200008EE9F5 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B64FB79E209B7200008EE9F5 /* UIViewController+Storyboard.m */; };
 		B64FB7A3209B728C008EE9F5 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64FB7A2209B728C008EE9F5 /* NextViewController.m */; };
 		B64FB7A5209B729D008EE9F5 /* NextViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64FB7A4209B729D008EE9F5 /* NextViewController.storyboard */; };
+		B64FB7AA209B76CE008EE9F5 /* UIView+Gradation.m in Sources */ = {isa = PBXBuildFile; fileRef = B64FB7A9209B76CE008EE9F5 /* UIView+Gradation.m */; };
 		B66ABBAC209B622700CBBA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBAB209B622700CBBA0E /* AppDelegate.m */; };
 		B66ABBAF209B622700CBBA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBAE209B622700CBBA0E /* ViewController.m */; };
 		B66ABBB2209B622700CBBA0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66ABBB0209B622700CBBA0E /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 		B64FB7A1209B728C008EE9F5 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		B64FB7A2209B728C008EE9F5 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		B64FB7A4209B729D008EE9F5 /* NextViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NextViewController.storyboard; sourceTree = "<group>"; };
+		B64FB7A8209B76CE008EE9F5 /* UIView+Gradation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradation.h"; sourceTree = "<group>"; };
+		B64FB7A9209B76CE008EE9F5 /* UIView+Gradation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradation.m"; sourceTree = "<group>"; };
 		B66ABBA7209B622700CBBA0E /* ios-objc-utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-objc-utils.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66ABBAA209B622700CBBA0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B66ABBAB209B622700CBBA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 				B64FB79A209B6867008EE9F5 /* UIViewController+Alert.m */,
 				B64FB79D209B7200008EE9F5 /* UIViewController+Storyboard.h */,
 				B64FB79E209B7200008EE9F5 /* UIViewController+Storyboard.m */,
+				B64FB7A8209B76CE008EE9F5 /* UIView+Gradation.h */,
+				B64FB7A9209B76CE008EE9F5 /* UIView+Gradation.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66ABBAF209B622700CBBA0E /* ViewController.m in Sources */,
+				B64FB7AA209B76CE008EE9F5 /* UIView+Gradation.m in Sources */,
 				B64FB7A3209B728C008EE9F5 /* NextViewController.m in Sources */,
 				B64FB79F209B7200008EE9F5 /* UIViewController+Storyboard.m in Sources */,
 				B66ABBBA209B622B00CBBA0E /* main.m in Sources */,
