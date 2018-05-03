@@ -8,9 +8,6 @@
 
 #import "ViewController.h"
 
-// Categories
-#import "UIViewController+Alert.h"
-
 @interface ViewController ()
 
 @end
@@ -37,7 +34,7 @@
     NSString * const title = @"エラー";
     NSString * const message = @"ユーザIDが入力されていません。";
     [self singleButtonAlertWithTitle:title message:message handler:^(UIAlertAction *action) {
-        NSLog(@"Block Callback");
+        DLOG(@"Block Callback");
     }];
 }
 
@@ -51,6 +48,6 @@
 #pragma mark Selector method
 
 - (void)didTapOK {
-    NSLog(@"Selector Callback");
+    DLOG(@"Selector Callback");
 }
 @end

@@ -18,7 +18,6 @@
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
 
-    // 引数でもらったhandlerをOKボタンタップ時のhandlerに使用する
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
                                                        style:UIAlertActionStyleDefault
                                                      handler:handler];
@@ -41,10 +40,6 @@
                                                      handler:^(UIAlertAction *action)
                                {
                                    if ([weakSelf respondsToSelector:callbackSelector]) {
-
-                                       // [weakSelf performSelector:callbackSelector]; のように
-                                       // performSelector: にSEL型変数を指定すると、ARC環境下ではWarningが出てしまう。
-                                       // 対策として、performSelector: withObject: afterDelay:を使用する
                                        [weakSelf performSelector:callbackSelector withObject:nil afterDelay:0.0f];
                                    }
                                }];
