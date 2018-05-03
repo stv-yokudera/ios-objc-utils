@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NextViewController.h"
 
 @interface ViewController ()
 
@@ -25,6 +26,21 @@
 
     [self showAlertCallbackBlock];
 //    [self showAlertCallbackSelector];
+}
+
+#pragma mark - IBActions
+
+#pragma mark UIViewController+Storyboard.h Usage
+
+- (IBAction)didTapToNextViewController:(UIButton *)sender {
+
+    DLOG();
+
+    // Storyboard名を指定して、NextViewControllerのインスタンスを生成
+    NSString * const storyboardName = @"NextViewController";
+    NextViewController *nextViewController = [NextViewController initialViewControllerWithStoryboardName:storyboardName];
+
+    [self presentViewController:nextViewController animated:YES completion:nil];
 }
 
 #pragma mark - UIViewController+Alert Usage
