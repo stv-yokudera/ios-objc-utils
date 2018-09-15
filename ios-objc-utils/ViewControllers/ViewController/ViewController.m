@@ -7,10 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "APIClient.h"
+#import "ItunesSearchAPI.h"
 #import "NextViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <ItunesSearchResult>
 
+@property (nonatomic) ItunesSearchAPI *itunesSearchAPI;
 @end
 
 @implementation ViewController
@@ -19,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.itunesSearchAPI = [[ItunesSearchAPI alloc] init];
+    self.itunesSearchAPI.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -31,14 +36,37 @@
     [self.view gradationWithTopColor:whiteColor bottomColor:magentaColor];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+#pragma mark - IBActions
 
+- (IBAction)didTapShowAlertUsingBlock:(UIButton *)sender {
     [self showAlertCallbackBlock];
-//    [self showAlertCallbackSelector];
 }
 
-#pragma mark - IBActions
+- (IBAction)didTapShowAlertUsingSelector:(UIButton *)sender {
+    [self showAlertCallbackSelector];
+}
+
+- (IBAction)didTapGetRequest:(UIButton *)sender {
+
+    [self.itunesSearchAPI loadWithTerm:@"テスト"];
+}
+
+- (IBAction)didTapPostImage:(UIButton *)sender {
+
+    NSString * const urlString = @"https://httpbin.org/post";
+    UIImage *testImage = [UIImage imageNamed:@"testImage"];
+    NSDictionary *imageDataDic = @{ @"picture": UIImageJPEGRepresentation(testImage, 0) };
+
+    [APIClient uploadImageWithUrlString:urlString
+                             parameters:nil
+                              imageData:imageDataDic
+                                success:^(id responseObject) {
+                                    DLOG(@"success!!!")
+                                } failure:^(NSError *error) {
+                                    DLOG(@"failure!!!")
+                                    DLOG(@"error:%@", error)
+                                }];
+}
 
 - (IBAction)didTapToNextViewController:(UIButton *)sender {
 
@@ -53,7 +81,7 @@
     [self presentViewController:nextViewController animated:YES completion:nil];
 }
 
-#pragma mark - UIViewController+Alert Usage
+#pragma mark UIViewController+Alert Usage
 
 - (void)showAlertCallbackBlock {
 
@@ -75,5 +103,23 @@
 
 - (void)didTapOK {
     DLOG(@"Selector Callback");
+}
+
+#pragma mark - ItunesSearchResult
+
+- (void)itunesSearchResultSuccess:(ItunesSearchResponse *)response {
+    DLOG(@"success!!!")
+    DLOG(@"resultCount:%ld", (long)response.resultCount)
+    DLOG(@"firstObject:%@", response.results.firstObject)
+}
+
+- (void)itunesSearchResultFailure:(NSString *)errorMessage {
+    DLOG(@"failure!!!")
+    DLOG(@"%@", errorMessage)
+}
+
+- (void)itunesSearchOffline:(NSString *)message {
+    DLOG(@"offline!!!")
+    DLOG(@"%@", message)
 }
 @end
