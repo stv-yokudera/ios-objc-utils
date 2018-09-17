@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "APIClient.h"
 #import "ItunesSearchAPI.h"
+#import "UserInfoViewController.h"
 
 @interface MainViewController () <ItunesSearchResult>
 
@@ -73,6 +74,11 @@
 
 #pragma mark UIViewController+Storyboard Usage
 
+    // Storyboard名を指定して、UserInfoViewControllerのインスタンスを生成
+    NSString * const storyboardName = @"UserInfoViewController";
+    UserInfoViewController *userInfoViewController = [UserInfoViewController initialViewControllerWithStoryboardName:storyboardName];
+
+    [self.navigationController pushViewController:userInfoViewController animated:YES];
 }
 
 #pragma mark UIViewController+Alert Usage

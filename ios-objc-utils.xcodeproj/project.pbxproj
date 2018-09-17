@@ -27,6 +27,12 @@
 		B6FF5BA1214D5B620059B870 /* ItunesSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5BA0214D5B620059B870 /* ItunesSearchResponse.m */; };
 		B6FF5BA4214D5B9B0059B870 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5BA3214D5B9B0059B870 /* Track.m */; };
 		B6FF5BA8214D5D3D0059B870 /* NSObject+NullToNil.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5BA7214D5D3D0059B870 /* NSObject+NullToNil.m */; };
+		B6FF5BC3214F68610059B870 /* NSString+EmojiCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5BC1214F68600059B870 /* NSString+EmojiCheck.m */; };
+		B6FF5BC6214F68750059B870 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5BC4214F68750059B870 /* Validator.m */; };
+		B6FF5BCA214F68850059B870 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5BC8214F68850059B870 /* UserInfoModel.m */; };
+		B6FF5BCF214F689E0059B870 /* UserInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FF5BCD214F689E0059B870 /* UserInfoViewController.storyboard */; };
+		B6FF5BD0214F689E0059B870 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5BCE214F689E0059B870 /* UserInfoViewController.m */; };
+		B6FF5BD3214F68C10059B870 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5BD2214F68C10059B870 /* ValidatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +97,16 @@
 		B6FF5BA3214D5B9B0059B870 /* Track.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 		B6FF5BA6214D5D3D0059B870 /* NSObject+NullToNil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NullToNil.h"; sourceTree = "<group>"; };
 		B6FF5BA7214D5D3D0059B870 /* NSObject+NullToNil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NullToNil.m"; sourceTree = "<group>"; };
+		B6FF5BC1214F68600059B870 /* NSString+EmojiCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmojiCheck.m"; sourceTree = "<group>"; };
+		B6FF5BC2214F68600059B870 /* NSString+EmojiCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EmojiCheck.h"; sourceTree = "<group>"; };
+		B6FF5BC4214F68750059B870 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
+		B6FF5BC5214F68750059B870 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
+		B6FF5BC8214F68850059B870 /* UserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
+		B6FF5BC9214F68850059B870 /* UserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		B6FF5BCC214F689E0059B870 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		B6FF5BCD214F689E0059B870 /* UserInfoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInfoViewController.storyboard; sourceTree = "<group>"; };
+		B6FF5BCE214F689E0059B870 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		B6FF5BD2214F68C10059B870 /* ValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +205,7 @@
 		B66ABBC2209B622B00CBBA0E /* ios-objc-utilsTests */ = {
 			isa = PBXGroup;
 			children = (
+				B6FF5BD1214F68C10059B870 /* Utils */,
 				B66ABBC3209B622B00CBBA0E /* ios_objc_utilsTests.m */,
 				B66ABBC5209B622B00CBBA0E /* Info.plist */,
 			);
@@ -231,6 +248,7 @@
 			children = (
 				B64FB7A7209B72F9008EE9F5 /* Startup */,
 				B64FB7A6209B72ED008EE9F5 /* MainViewController */,
+				B6FF5BCB214F689E0059B870 /* UserInfoViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -255,6 +273,8 @@
 				B6FF5B93214D085E0059B870 /* APIClient.m */,
 				B6FF5B95214D2D380059B870 /* Reachability.h */,
 				B6FF5B96214D2D380059B870 /* Reachability.m */,
+				B6FF5BC5214F68750059B870 /* Validator.h */,
+				B6FF5BC4214F68750059B870 /* Validator.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -263,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				B6FF5BBC214F57220059B870 /* Main */,
+				B6FF5BC7214F68850059B870 /* UserInfo */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,6 +293,8 @@
 			children = (
 				B6FF5BA6214D5D3D0059B870 /* NSObject+NullToNil.h */,
 				B6FF5BA7214D5D3D0059B870 /* NSObject+NullToNil.m */,
+				B6FF5BC2214F68600059B870 /* NSString+EmojiCheck.h */,
+				B6FF5BC1214F68600059B870 /* NSString+EmojiCheck.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -295,6 +318,33 @@
 				B6FF5BBB214F567D0059B870 /* ItunesSearchAPI */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		B6FF5BC7214F68850059B870 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF5BC9214F68850059B870 /* UserInfoModel.h */,
+				B6FF5BC8214F68850059B870 /* UserInfoModel.m */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		B6FF5BCB214F689E0059B870 /* UserInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF5BCC214F689E0059B870 /* UserInfoViewController.h */,
+				B6FF5BCE214F689E0059B870 /* UserInfoViewController.m */,
+				B6FF5BCD214F689E0059B870 /* UserInfoViewController.storyboard */,
+			);
+			path = UserInfoViewController;
+			sourceTree = "<group>";
+		};
+		B6FF5BD1214F68C10059B870 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF5BD2214F68C10059B870 /* ValidatorTests.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F00D7EC781B4842D6E9558D0 /* Frameworks */ = {
@@ -415,6 +465,7 @@
 			files = (
 				B66ABBB7209B622B00CBBA0E /* LaunchScreen.storyboard in Resources */,
 				B66ABBB4209B622B00CBBA0E /* Assets.xcassets in Resources */,
+				B6FF5BCF214F689E0059B870 /* UserInfoViewController.storyboard in Resources */,
 				B66ABBB2209B622700CBBA0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,13 +551,17 @@
 				B66ABBAF209B622700CBBA0E /* MainViewController.m in Sources */,
 				B64FB7AA209B76CE008EE9F5 /* UIView+Gradation.m in Sources */,
 				B64FB79F209B7200008EE9F5 /* UIViewController+Storyboard.m in Sources */,
+				B6FF5BC3214F68610059B870 /* NSString+EmojiCheck.m in Sources */,
 				B66ABBBA209B622B00CBBA0E /* main.m in Sources */,
 				B66ABBAC209B622700CBBA0E /* AppDelegate.m in Sources */,
 				B6FF5BA1214D5B620059B870 /* ItunesSearchResponse.m in Sources */,
 				B6FF5BA8214D5D3D0059B870 /* NSObject+NullToNil.m in Sources */,
+				B6FF5BC6214F68750059B870 /* Validator.m in Sources */,
 				B6FF5B9E214D5A750059B870 /* ItunesSearchAPI.m in Sources */,
 				B6FF5BA4214D5B9B0059B870 /* Track.m in Sources */,
+				B6FF5BCA214F68850059B870 /* UserInfoModel.m in Sources */,
 				B64FB79B209B6867008EE9F5 /* UIViewController+Alert.m in Sources */,
+				B6FF5BD0214F689E0059B870 /* UserInfoViewController.m in Sources */,
 				B6FF5B97214D2D380059B870 /* Reachability.m in Sources */,
 				B6FF5B94214D085E0059B870 /* APIClient.m in Sources */,
 			);
@@ -516,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FF5BD3214F68C10059B870 /* ValidatorTests.m in Sources */,
 				B66ABBC4209B622B00CBBA0E /* ios_objc_utilsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
