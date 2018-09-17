@@ -12,11 +12,9 @@
 		90DCCBA3440D01AF8AD0FF9D /* libPods-ios-objc-utilsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E10086DA61B4FB57D2E97A /* libPods-ios-objc-utilsUITests.a */; };
 		B64FB79B209B6867008EE9F5 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = B64FB79A209B6867008EE9F5 /* UIViewController+Alert.m */; };
 		B64FB79F209B7200008EE9F5 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B64FB79E209B7200008EE9F5 /* UIViewController+Storyboard.m */; };
-		B64FB7A3209B728C008EE9F5 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64FB7A2209B728C008EE9F5 /* NextViewController.m */; };
-		B64FB7A5209B729D008EE9F5 /* NextViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64FB7A4209B729D008EE9F5 /* NextViewController.storyboard */; };
 		B64FB7AA209B76CE008EE9F5 /* UIView+Gradation.m in Sources */ = {isa = PBXBuildFile; fileRef = B64FB7A9209B76CE008EE9F5 /* UIView+Gradation.m */; };
 		B66ABBAC209B622700CBBA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBAB209B622700CBBA0E /* AppDelegate.m */; };
-		B66ABBAF209B622700CBBA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBAE209B622700CBBA0E /* ViewController.m */; };
+		B66ABBAF209B622700CBBA0E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBAE209B622700CBBA0E /* MainViewController.m */; };
 		B66ABBB2209B622700CBBA0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66ABBB0209B622700CBBA0E /* Main.storyboard */; };
 		B66ABBB4209B622B00CBBA0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66ABBB3209B622B00CBBA0E /* Assets.xcassets */; };
 		B66ABBB7209B622B00CBBA0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66ABBB5209B622B00CBBA0E /* LaunchScreen.storyboard */; };
@@ -63,16 +61,13 @@
 		B64FB79C209B6D0B008EE9F5 /* ios-objc-utils.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-objc-utils.pch"; sourceTree = "<group>"; };
 		B64FB79D209B7200008EE9F5 /* UIViewController+Storyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Storyboard.h"; sourceTree = "<group>"; };
 		B64FB79E209B7200008EE9F5 /* UIViewController+Storyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Storyboard.m"; sourceTree = "<group>"; };
-		B64FB7A1209B728C008EE9F5 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
-		B64FB7A2209B728C008EE9F5 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
-		B64FB7A4209B729D008EE9F5 /* NextViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NextViewController.storyboard; sourceTree = "<group>"; };
 		B64FB7A8209B76CE008EE9F5 /* UIView+Gradation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradation.h"; sourceTree = "<group>"; };
 		B64FB7A9209B76CE008EE9F5 /* UIView+Gradation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradation.m"; sourceTree = "<group>"; };
 		B66ABBA7209B622700CBBA0E /* ios-objc-utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-objc-utils.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66ABBAA209B622700CBBA0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B66ABBAB209B622700CBBA0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B66ABBAD209B622700CBBA0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B66ABBAE209B622700CBBA0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B66ABBAD209B622700CBBA0E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B66ABBAE209B622700CBBA0E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B66ABBB1209B622700CBBA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B66ABBB3209B622B00CBBA0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66ABBB6209B622B00CBBA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -139,24 +134,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B64FB7A0209B7277008EE9F5 /* NextViewController */ = {
+		B64FB7A6209B72ED008EE9F5 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B64FB7A1209B728C008EE9F5 /* NextViewController.h */,
-				B64FB7A2209B728C008EE9F5 /* NextViewController.m */,
-				B64FB7A4209B729D008EE9F5 /* NextViewController.storyboard */,
-			);
-			path = NextViewController;
-			sourceTree = "<group>";
-		};
-		B64FB7A6209B72ED008EE9F5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B66ABBAD209B622700CBBA0E /* ViewController.h */,
-				B66ABBAE209B622700CBBA0E /* ViewController.m */,
+				B66ABBAD209B622700CBBA0E /* MainViewController.h */,
+				B66ABBAE209B622700CBBA0E /* MainViewController.m */,
 				B66ABBB0209B622700CBBA0E /* Main.storyboard */,
 			);
-			path = ViewController;
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		B64FB7A7209B72F9008EE9F5 /* Startup */ = {
@@ -245,8 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				B64FB7A7209B72F9008EE9F5 /* Startup */,
-				B64FB7A6209B72ED008EE9F5 /* ViewController */,
-				B64FB7A0209B7277008EE9F5 /* NextViewController */,
+				B64FB7A6209B72ED008EE9F5 /* MainViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -278,12 +262,7 @@
 		B6FF5B9B214D59B70059B870 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B6FF5B9C214D5A750059B870 /* ItunesSearchAPI.h */,
-				B6FF5B9D214D5A750059B870 /* ItunesSearchAPI.m */,
-				B6FF5B9F214D5B620059B870 /* ItunesSearchResponse.h */,
-				B6FF5BA0214D5B620059B870 /* ItunesSearchResponse.m */,
-				B6FF5BA2214D5B9B0059B870 /* Track.h */,
-				B6FF5BA3214D5B9B0059B870 /* Track.m */,
+				B6FF5BBC214F57220059B870 /* Main */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,6 +274,27 @@
 				B6FF5BA7214D5D3D0059B870 /* NSObject+NullToNil.m */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B6FF5BBB214F567D0059B870 /* ItunesSearchAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF5B9C214D5A750059B870 /* ItunesSearchAPI.h */,
+				B6FF5B9D214D5A750059B870 /* ItunesSearchAPI.m */,
+				B6FF5B9F214D5B620059B870 /* ItunesSearchResponse.h */,
+				B6FF5BA0214D5B620059B870 /* ItunesSearchResponse.m */,
+				B6FF5BA2214D5B9B0059B870 /* Track.h */,
+				B6FF5BA3214D5B9B0059B870 /* Track.m */,
+			);
+			path = ItunesSearchAPI;
+			sourceTree = "<group>";
+		};
+		B6FF5BBC214F57220059B870 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF5BBB214F567D0059B870 /* ItunesSearchAPI */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		F00D7EC781B4842D6E9558D0 /* Frameworks */ = {
@@ -415,7 +415,6 @@
 			files = (
 				B66ABBB7209B622B00CBBA0E /* LaunchScreen.storyboard in Resources */,
 				B66ABBB4209B622B00CBBA0E /* Assets.xcassets in Resources */,
-				B64FB7A5209B729D008EE9F5 /* NextViewController.storyboard in Resources */,
 				B66ABBB2209B622700CBBA0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,9 +497,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66ABBAF209B622700CBBA0E /* ViewController.m in Sources */,
+				B66ABBAF209B622700CBBA0E /* MainViewController.m in Sources */,
 				B64FB7AA209B76CE008EE9F5 /* UIView+Gradation.m in Sources */,
-				B64FB7A3209B728C008EE9F5 /* NextViewController.m in Sources */,
 				B64FB79F209B7200008EE9F5 /* UIViewController+Storyboard.m in Sources */,
 				B66ABBBA209B622B00CBBA0E /* main.m in Sources */,
 				B66ABBAC209B622700CBBA0E /* AppDelegate.m in Sources */,

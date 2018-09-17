@@ -1,22 +1,21 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  ios-objc-utils
 //
 //  Created by OkuderaYuki on 2018/05/04.
 //  Copyright © 2018年 OkuderaYuki. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "APIClient.h"
 #import "ItunesSearchAPI.h"
-#import "NextViewController.h"
 
-@interface ViewController () <ItunesSearchResult>
+@interface MainViewController () <ItunesSearchResult>
 
 @property (nonatomic) ItunesSearchAPI *itunesSearchAPI;
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 #pragma mark - Life cycle
 
@@ -68,17 +67,12 @@
                                 }];
 }
 
-- (IBAction)didTapToNextViewController:(UIButton *)sender {
+- (IBAction)didTapToNext:(UIButton *)sender {
 
     DLOG();
 
 #pragma mark UIViewController+Storyboard Usage
 
-    // Storyboard名を指定して、NextViewControllerのインスタンスを生成
-    NSString * const storyboardName = @"NextViewController";
-    NextViewController *nextViewController = [NextViewController initialViewControllerWithStoryboardName:storyboardName];
-
-    [self presentViewController:nextViewController animated:YES completion:nil];
 }
 
 #pragma mark UIViewController+Alert Usage
