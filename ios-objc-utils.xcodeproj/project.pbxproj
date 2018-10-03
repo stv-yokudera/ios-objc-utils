@@ -21,6 +21,8 @@
 		B66ABBBA209B622B00CBBA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBB9209B622B00CBBA0E /* main.m */; };
 		B66ABBC4209B622B00CBBA0E /* ios_objc_utilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBC3209B622B00CBBA0E /* ios_objc_utilsTests.m */; };
 		B66ABBCF209B622B00CBBA0E /* ios_objc_utilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B66ABBCE209B622B00CBBA0E /* ios_objc_utilsUITests.m */; };
+		B6B94D7221653C1600224EB1 /* UIViewController+Validate4BytesCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B94D6F21653C1500224EB1 /* UIViewController+Validate4BytesCharacters.m */; };
+		B6B94D7321653C1600224EB1 /* NSString+Bytes.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B94D7121653C1500224EB1 /* NSString+Bytes.m */; };
 		B6FF5B94214D085E0059B870 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5B93214D085E0059B870 /* APIClient.m */; };
 		B6FF5B97214D2D380059B870 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5B96214D2D380059B870 /* Reachability.m */; };
 		B6FF5B9E214D5A750059B870 /* ItunesSearchAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF5B9D214D5A750059B870 /* ItunesSearchAPI.m */; };
@@ -85,6 +87,10 @@
 		B66ABBCA209B622B00CBBA0E /* ios-objc-utilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-objc-utilsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66ABBCE209B622B00CBBA0E /* ios_objc_utilsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_objc_utilsUITests.m; sourceTree = "<group>"; };
 		B66ABBD0209B622B00CBBA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B94D6E21653C1500224EB1 /* UIViewController+Validate4BytesCharacters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Validate4BytesCharacters.h"; sourceTree = "<group>"; };
+		B6B94D6F21653C1500224EB1 /* UIViewController+Validate4BytesCharacters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Validate4BytesCharacters.m"; sourceTree = "<group>"; };
+		B6B94D7021653C1500224EB1 /* NSString+Bytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Bytes.h"; sourceTree = "<group>"; };
+		B6B94D7121653C1500224EB1 /* NSString+Bytes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bytes.m"; sourceTree = "<group>"; };
 		B6FF5B92214D085E0059B870 /* APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		B6FF5B93214D085E0059B870 /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		B6FF5B95214D2D380059B870 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -295,6 +301,10 @@
 				B6FF5BA7214D5D3D0059B870 /* NSObject+NullToNil.m */,
 				B6FF5BC2214F68600059B870 /* NSString+EmojiCheck.h */,
 				B6FF5BC1214F68600059B870 /* NSString+EmojiCheck.m */,
+				B6B94D7021653C1500224EB1 /* NSString+Bytes.h */,
+				B6B94D7121653C1500224EB1 /* NSString+Bytes.m */,
+				B6B94D6E21653C1500224EB1 /* UIViewController+Validate4BytesCharacters.h */,
+				B6B94D6F21653C1500224EB1 /* UIViewController+Validate4BytesCharacters.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -555,6 +565,7 @@
 				B66ABBBA209B622B00CBBA0E /* main.m in Sources */,
 				B66ABBAC209B622700CBBA0E /* AppDelegate.m in Sources */,
 				B6FF5BA1214D5B620059B870 /* ItunesSearchResponse.m in Sources */,
+				B6B94D7221653C1600224EB1 /* UIViewController+Validate4BytesCharacters.m in Sources */,
 				B6FF5BA8214D5D3D0059B870 /* NSObject+NullToNil.m in Sources */,
 				B6FF5BC6214F68750059B870 /* Validator.m in Sources */,
 				B6FF5B9E214D5A750059B870 /* ItunesSearchAPI.m in Sources */,
@@ -562,6 +573,7 @@
 				B6FF5BCA214F68850059B870 /* UserInfoModel.m in Sources */,
 				B64FB79B209B6867008EE9F5 /* UIViewController+Alert.m in Sources */,
 				B6FF5BD0214F689E0059B870 /* UserInfoViewController.m in Sources */,
+				B6B94D7321653C1600224EB1 /* NSString+Bytes.m in Sources */,
 				B6FF5B97214D2D380059B870 /* Reachability.m in Sources */,
 				B6FF5B94214D085E0059B870 /* APIClient.m in Sources */,
 			);

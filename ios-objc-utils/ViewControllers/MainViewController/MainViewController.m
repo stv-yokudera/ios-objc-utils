@@ -10,6 +10,7 @@
 #import "APIClient.h"
 #import "ItunesSearchAPI.h"
 #import "UserInfoViewController.h"
+#import "UIViewController+Validate4BytesCharacters.h"
 
 @interface MainViewController () <ItunesSearchResult>
 
@@ -103,6 +104,21 @@
 
 - (void)didTapOK {
     DLOG(@"Selector Callback");
+}
+
+#pragma mark UIViewController+Validate4BytesCharacters Usage
+
+- (IBAction)didTapRegister:(UIButton *)sender {
+
+    UIAlertController *alert = [self validate4BytesCharacters];
+    if (alert) {
+        [self presentViewController:alert animated:YES completion:nil];
+        NSLog(@"4バイト文字の入力あり");
+        return;
+    }
+
+    NSLog(@"4バイト文字の入力なし");
+    // other validations
 }
 
 #pragma mark - ItunesSearchResult

@@ -15,6 +15,7 @@
 #import "UIView+Gradation.h"
 #import "UIViewController+Alert.h"
 #import "UIViewController+Storyboard.h"
+#import "UIViewController+Validate4BytesCharacters.h"
 
 #pragma mark - Debug log
 
